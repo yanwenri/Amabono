@@ -1,0 +1,9 @@
+com\sk\sample\mall\product\domain\model\SizeType.class
+com\sk\sample\mall\product\application\sp\web\RepositoryRestConfig.class
+com\sk\sample\mall\product\application\sp\web\SwaggerConfig.class
+com\sk\sample\mall\product\domain\model\ProductDescription.class
+com\sk\sample\mall\product\domain\model\Money.class
+com\sk\sample\mall\product\domain\repository\ProductRepository.class
+com\sk\sample\mall\product\domain\model\ColorType.class
+com\sk\sample\mall\product\domain\model\Product.class
+com\sk\sample\mall\product\ProductApplication.class
