@@ -1,3 +1,3 @@
 FROM openjdk:8-jre-alpine
-COPY target/*.jar mall.jar
-CMD ["java","-jar","/mall.jar"]
+COPY mall-account/target/*.jar mall-account.jar
+CMD ["java","-jar","/mall-account.jar"]
