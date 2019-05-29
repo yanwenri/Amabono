@@ -15,6 +15,7 @@ import lombok.EqualsAndHashCode;
 @Data
 @EqualsAndHashCode
 public class Account {
+	private String userid;
 	private String email;
 	private String name;
 	
@@ -26,15 +27,18 @@ public class Account {
 	
 	private Address address;
 	
-	public Account(String email, String name, MemberType memberType) {
-		this(email, name, memberType, MembershipLevelType.SILVER);
+	public Account(String userid, String email, String name, MemberType memberType) {
+		this(userid, email, name, memberType, MembershipLevelType.SILVER);
 	}
 	
-	public Account(String email, String name, MemberType memberType, MembershipLevelType membershipLevelType) {
+	public Account(String userid, String email, String name, MemberType memberType, MembershipLevelType membershipLevelType) {
+		this.userid = userid;
 		this.email = email;
 		this.name = name;
 		this.memberType = memberType;
 		this.membershipLevelType = membershipLevelType;
 	}
+	
+	
 }
 
