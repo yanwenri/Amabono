@@ -6,17 +6,14 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
-@RequestMapping("/account/*")
 public class AccountRestController {
-//	@RequestMapping(method=RequestMethod.GET)
-	@GetMapping("login")
+	@RequestMapping("/login")
 	public String login() {
 		return "login";
 	}
-	
-//	@RequestMapping(method=RequestMethod.GET)
-	@GetMapping("account")
-	public String account() {
-		return "account";
+	//loginForm
+	@RequestMapping(value="/login", method=RequestMethod.POST)
+	public void loginPOST(String id) {
+		System.out.println("Submit ID :: " + id);
 	}
 }

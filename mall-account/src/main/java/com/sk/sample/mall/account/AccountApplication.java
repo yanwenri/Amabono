@@ -22,14 +22,14 @@ public class AccountApplication {
 	@Bean
 	public CommandLineRunner createSampleData(AccountRepository accountRepository) {	
 		return (args) -> {
-			Account account1 = new Account("hong@sk.com", "홍길동", MemberType.BUYER);
+			Account account1 = new Account("hongildong", "hong@sk.com", "홍길동", MemberType.BUYER);
 			accountRepository.save(account1);
 			
-			Account account2 = new Account("kang@sk.com", "강호동", MemberType.BUYER, MembershipLevelType.VIP);
+			Account account2 = new Account("kang", "kang@sk.com", "강호동", MemberType.BUYER, MembershipLevelType.VIP);
 			account2.setAddress(new Address(12345, "서울시 강남구"));
 			accountRepository.save(account2);
 			
-			Account account3 = new Account("yu@gmail.com", "유재석", MemberType.SELLER);
+			Account account3 = new Account("medduki", "yu@gmail.com", "유재석", MemberType.SELLER);
 			account3.setAddress(new Address(10000, "경기도 성남시"));
 			accountRepository.save(account3);
 			

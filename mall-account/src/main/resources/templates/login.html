@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html>
-<!-- 
-  <html xmlns:th="http://www.thymeleaf.org">
--->  
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
-<meta charset="UTF-8"/>
-<title>Login Form</title>
+	<meta charset="UTF-8"/>
+	<title>Login Form</title>
 </head>
 <body>
 	<h1>Login Thymeleaf</h1>
+	<form name="loginForm" method="post">
+		<p>ID : <input type="text" name="id" /></p>
+		<p><input type="submit" value="Login"/></p>
+	</form>
 </body>
 </html>

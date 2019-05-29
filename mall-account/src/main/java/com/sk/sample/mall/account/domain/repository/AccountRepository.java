@@ -10,4 +10,5 @@ import com.sk.sample.mall.account.domain.model.Account;
 public interface AccountRepository extends PagingAndSortingRepository<Account, Long> {
 	Account findByEmail(String email);
 	Account findByNameLike(String name);
+	Account findByUserid(String userid);
 }
