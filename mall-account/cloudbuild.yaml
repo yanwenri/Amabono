@@ -4,6 +4,8 @@ steps:
 - name: 'gcr.io/cloud-builders/docker'
   args: ['build', '-t', 'gcr.io/amabono/mall-account/mall-account-test', '.']
   timeout: 500s
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['push', 'gcr.io/amabono/mall-account/mall-account-test']  
 options:
   machineType: 'N1_HIGHCPU_8' # HIGHCPU로 빌드 스피드 업
 timeout: 1000s # 빌드 자체에 대한 타임 아웃
