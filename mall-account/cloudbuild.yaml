@@ -1,7 +1,7 @@
 steps:
-- name: 'asia.gcr.io/cloud-builders/mvn'
+- name: 'gcr.io/cloud-builders/mvn'
   args: ['install']
-- name: 'asia.gcr.io/cloud-builders/docker'
+- name: 'gcr.io/cloud-builders/docker'
   args: ['build', '-t', 'asia.gcr.io/amabono/mall-account/mall-account-test', '.']
   timeout: 500s
 - name: 'gcr.io/cloud-builders/docker'
